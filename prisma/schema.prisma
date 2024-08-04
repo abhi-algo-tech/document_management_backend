@@ -1,0 +1,358 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "@prisma/client"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model SequelizeMeta {
+  name String @id @unique(map: "name") @db.VarChar(255)
+}
+
+model attendance_master_am {
+  id_am         Int      @id @default(autoincrement())
+  attendance_id String   @db.VarChar(255)
+  date          String   @db.VarChar(255)
+  start_time    String?  @db.VarChar(255)
+  end_time      String?  @db.VarChar(255)
+  status_flag   String?  @db.VarChar(255)
+  dwr_flag      Boolean  @default(false)
+  delete_flag   Boolean  @default(false)
+  createdAt     DateTime @db.DateTime(0)
+  updatedAt     DateTime @db.DateTime(0)
+}
+
+model document_master_rm {
+  id_drm          Int      @id @default(autoincrement())
+  name_drm        String   @db.VarChar(255)
+  delete_flag_drm Boolean  @default(false)
+  createdAt       DateTime @db.DateTime(0)
+  updatedAt       DateTime @db.DateTime(0)
+}
+
+model dropDown_master_dm {
+  id_dm          Int      @id @default(autoincrement())
+  name_dm        String   @db.VarChar(255)
+  type_dm        String   @db.VarChar(255)
+  delete_flag_dm Boolean  @default(false)
+  createdAt      DateTime @db.DateTime(0)
+  updatedAt      DateTime @db.DateTime(0)
+}
+
+model dwr_date_adjust_dda {
+  id_dda          Int      @id @default(autoincrement())
+  employee_id_dda String   @db.VarChar(255)
+  date_dda        String   @db.VarChar(255)
+  status_dda      String   @default("Pending") @db.VarChar(255)
+  delete_flag_dda Boolean  @default(false)
+  createdAt       DateTime @db.DateTime(0)
+  updatedAt       DateTime @db.DateTime(0)
+}
+
+model dwr_ds {
+  id_ds               Int      @id @default(autoincrement())
+  employee_id_ds      Int
+  date_ds             String   @db.VarChar(255)
+  from_time_ds        String   @db.VarChar(255)
+  to_time_ds          String   @db.VarChar(255)
+  task_id_ds          String?  @db.VarChar(255)
+  project_name_ds     String   @db.VarChar(255)
+  task_description_ds String   @db.VarChar(255)
+  reported_by_ds      String   @db.VarChar(255)
+  ticket_type_ds      String?  @db.VarChar(255)
+  status_ds           String   @db.VarChar(255)
+  estimated_date_ds   String?  @db.VarChar(255)
+  solution_ds         String?  @db.VarChar(255)
+  delete_flag_ds      Boolean  @default(false)
+  createdAt           DateTime @db.DateTime(0)
+  updatedAt           DateTime @db.DateTime(0)
+}
+
+model email_log_el {
+  id         Int      @id @default(autoincrement())
+  eamil_el   String?  @db.VarChar(255)
+  name_el    String?  @db.VarChar(255)
+  subject_el String?  @db.VarChar(255)
+  body_el    String?  @db.VarChar(255)
+  sent_at_el String?  @db.VarChar(255)
+  date_el    String?  @db.VarChar(255)
+  file_el    Bytes?   @db.Blob
+  createdAt  DateTime @db.DateTime(0)
+  updatedAt  DateTime @db.DateTime(0)
+}
+
+model employee_address_ea {
+  id_ea            Int      @id @default(autoincrement())
+  employee_id_ea   Int
+  address_type_ea  String?  @db.VarChar(255)
+  address_line1_ea String?  @db.VarChar(255)
+  address_line2_ea String?  @db.VarChar(255)
+  country_ea       String?  @db.VarChar(255)
+  pin_code_ea      String?  @db.VarChar(255)
+  city_ea          String?  @db.VarChar(255)
+  state_ea         String?  @db.VarChar(255)
+  contactno1_ea    String?  @db.VarChar(255)
+  contactno2_ea    String?  @db.VarChar(255)
+  delete_flag_ea   Boolean  @default(false)
+  createdAt        DateTime @db.DateTime(0)
+  updatedAt        DateTime @db.DateTime(0)
+}
+
+model employee_document_ed {
+  id_ed               Int      @id @default(autoincrement())
+  employee_id_ed      Int?
+  document_type_ed    Json?
+  upload_file_path_ed String?  @db.VarChar(255)
+  description_ed      String?  @db.VarChar(255)
+  delete_flag_ed      Boolean  @default(false)
+  createdAt           DateTime @db.DateTime(0)
+  updatedAt           DateTime @db.DateTime(0)
+}
+
+model employee_educational_details_eed {
+  id_eed          Int      @id @default(autoincrement())
+  employee_id_eed Int
+  degree_eed      Json
+  institute_eed   Json
+  startDate_eed   String   @db.VarChar(255)
+  endDate_eed     String   @db.VarChar(255)
+  percentage_eed  String   @db.VarChar(255)
+  deleteFlag_eed  Boolean  @default(false)
+  createdAt       DateTime @db.DateTime(0)
+  updatedAt       DateTime @db.DateTime(0)
+  document_eed    String?  @db.VarChar(255)
+}
+
+model employee_master_em {
+  id_em                   Int                   @id @default(autoincrement())
+  firstname_em            String                @db.VarChar(255)
+  middlename_em           String?               @db.VarChar(255)
+  lastname_em             String                @db.VarChar(255)
+  email_em                String                @unique(map: "email_em") @db.VarChar(255)
+  date_em                 String?               @db.VarChar(255)
+  balanceleave_em         String?               @db.VarChar(255)
+  lastupdatedmonthyear_em String?               @db.VarChar(255)
+  reporting_em            Json?
+  role_em                 String?               @db.VarChar(255)
+  password_em             String                @db.VarChar(255)
+  attendanceid_em         String?               @db.VarChar(255)
+  phone_number_em         String                @db.VarChar(255)
+  profile_em              String?               @db.VarChar(255)
+  employment_type_em      String?               @db.VarChar(255)
+  status_em               String?               @default("Active") @db.VarChar(255)
+  deleteFlag_em           Boolean               @default(false)
+  createdAt               DateTime              @db.DateTime(0)
+  updatedAt               DateTime              @db.DateTime(0)
+  leave_management_lm     leave_management_lm[]
+}
+
+model employee_personal_details_epd {
+  id_epd                 Int      @id @default(autoincrement())
+  employee_id_epd        Int
+  blood_group_epd        String?  @db.VarChar(255)
+  pan_no_epd             String?  @db.VarChar(255)
+  addhar_no_epd          String?  @db.VarChar(255)
+  emergency_contact1_epd String?  @db.VarChar(255)
+  emergency_contact2_epd String?  @db.VarChar(255)
+  relation1_epd          String?  @db.VarChar(255)
+  relation2_epd          String?  @db.VarChar(255)
+  date_of_birth_epd      String?  @db.VarChar(255)
+  delete_flag_epd        Boolean  @default(false)
+  createdAt              DateTime @db.DateTime(0)
+  updatedAt              DateTime @db.DateTime(0)
+  marital_status_epd     String?  @db.VarChar(45)
+  personal_email_epd     String?  @db.VarChar(45)
+  phone_number_epd       String?  @db.VarChar(45)
+  gender_epd             Json?
+  pan_no_path_epd        String?  @db.VarChar(225)
+  addhar_no_path_epd     String?  @db.VarChar(225)
+  pan_no_name_epd        String?  @db.VarChar(100)
+  addhar_no_name_epd     String?  @db.VarChar(100)
+}
+
+model employee_salary_details_esd {
+  id_esd                Int      @id @default(autoincrement())
+  employee_id_esd       Int
+  bank_account_name_esd String?  @db.VarChar(255)
+  ifsc_code_esd         String?  @db.VarChar(255)
+  account_no_esd        String?  @db.VarChar(255)
+  uan_no_esd            String?  @db.VarChar(255)
+  epfo_no_esd           String?  @db.VarChar(255)
+  annual_salary_esd     String?  @db.VarChar(255)
+  monthly_salary_esd    String?  @db.VarChar(255)
+  delete_flag_esd       Boolean  @default(false)
+  createdAt             DateTime @db.DateTime(0)
+  updatedAt             DateTime @db.DateTime(0)
+  document_esd          String?  @db.VarChar(225)
+}
+
+model holiday_master_hm {
+  id_hm          Int      @id @default(autoincrement())
+  name_hm        String   @db.VarChar(255)
+  day_hm         String   @db.VarChar(255)
+  holiday_hm     String   @db.VarChar(255)
+  delete_flag_hm Boolean  @default(false)
+  createdAt      DateTime @db.DateTime(0)
+  updatedAt      DateTime @db.DateTime(0)
+}
+
+model leave_management_lm {
+  id_lm              Int                @id @default(autoincrement())
+  employee_id_lm     Int
+  leave_type_lm      Json
+  description_lm     String             @db.VarChar(255)
+  start_date_lm      String             @db.VarChar(255)
+  end_date_lm        String             @db.VarChar(255)
+  no_of_days_lm      String?            @db.VarChar(255)
+  balanced_leave_lm  String?            @db.VarChar(255)
+  status_lm          String             @default("Pending") @db.VarChar(255)
+  delete_flag_lm     Boolean            @default(false)
+  createdAt          DateTime           @db.DateTime(0)
+  updatedAt          DateTime           @db.DateTime(0)
+  employee_master_em employee_master_em @relation(fields: [employee_id_lm], references: [id_em], onDelete: NoAction, map: "leave_management_lm_ibfk_1")
+
+  @@index([employee_id_lm], map: "employee_id_lm")
+}
+
+model leave_master_rm {
+  id_ltm          Int      @id @default(autoincrement())
+  name_ltm        String   @db.VarChar(255)
+  delete_flag_ltm Boolean  @default(false)
+  createdAt       DateTime @db.DateTime(0)
+  updatedAt       DateTime @db.DateTime(0)
+}
+
+model letters_master_lm {
+  id_lm          Int      @id @default(autoincrement())
+  letter_type_lm String   @db.VarChar(255)
+  path_lm        String   @db.VarChar(255)
+  delete_flag_lm Boolean  @default(false)
+  createdAt      DateTime @db.DateTime(0)
+  updatedAt      DateTime @db.DateTime(0)
+}
+
+model letters_type_master_ltm {
+  id_ltm          Int      @id @default(autoincrement())
+  letter_type_ltm String   @db.VarChar(255)
+  path_ltm        String   @db.VarChar(255)
+  delete_flag_ltm Boolean  @default(false)
+  createdAt       DateTime @db.DateTime(0)
+  updatedAt       DateTime @db.DateTime(0)
+}
+
+model offer_letter_template_schema_olts {
+  id_olts          Int      @id @default(autoincrement())
+  paragraph1_olts  String   @db.VarChar(255)
+  paragraph2_olts  String   @db.VarChar(255)
+  paragraph3_olts  String   @db.VarChar(255)
+  paragraph4_olts  String   @db.VarChar(255)
+  paragraph5_olts  String   @db.VarChar(255)
+  delete_flag_olts Boolean  @default(false)
+  createdAt        DateTime @db.DateTime(0)
+  updatedAt        DateTime @db.DateTime(0)
+}
+
+model project_master_pm {
+  id_pm                  Int      @id @default(autoincrement())
+  name_pm                String   @db.VarChar(255)
+  client_name_pm         String   @db.VarChar(255)
+  client_location_pm     String   @db.VarChar(255)
+  contact_name_pm        String   @db.VarChar(255)
+  contact_no_pm          String   @db.VarChar(255)
+  email_pm               String   @db.VarChar(255)
+  tecnology_pm           Json
+  employee_project_id_pm Json
+  description_pm         String   @db.VarChar(255)
+  start_date_pm          String   @db.VarChar(255)
+  end_date_pm            String   @db.VarChar(255)
+  status_pm              String   @default("Pending") @db.VarChar(255)
+  delete_flag_pm         Boolean  @default(false)
+  createdAt              DateTime @db.DateTime(0)
+  updatedAt              DateTime @db.DateTime(0)
+}
+
+model role_master_rm {
+  id_rm          Int      @id @default(autoincrement())
+  name_rm        String   @db.VarChar(255)
+  delete_flag_rm Boolean  @default(false)
+  createdAt      DateTime @db.DateTime(0)
+  updatedAt      DateTime @db.DateTime(0)
+}
+
+model salary_slip_master_ssm {
+  id_ssm              Int      @id @default(autoincrement())
+  employee_id_ssm     Int
+  date_ssm            String   @db.VarChar(255)
+  basic_salary_ssm    Int      @default(0)
+  leave_ssm           Int      @default(0)
+  hra_ssm             Int?     @default(0)
+  conveyance_ssm      Int?     @default(0)
+  loan_ssm            Int?     @default(0)
+  profession_tax_ssm  Int?     @default(0)
+  tds_it_ssm          Int?     @default(0)
+  daily_wages_ssm     Int?     @default(0)
+  total_addition_ssm  Int?     @default(0)
+  total_deduction_ssm Int?     @default(0)
+  net_salary_ssm      Int?     @default(0)
+  status_ssm          String?  @default("Pending") @db.VarChar(255)
+  path_ssm            String?  @db.VarChar(255)
+  delete_flag_lm      Boolean  @default(false)
+  createdAt           DateTime @db.DateTime(0)
+  updatedAt           DateTime @db.DateTime(0)
+}
+
+model task_master_tm {
+  id_tm           Int      @id @default(autoincrement())
+  project_id_tm   Json
+  assign_by_id_tm String   @db.VarChar(255)
+  name_tm         String   @db.VarChar(255)
+  task_type_tm    Json
+  assign_to_tm    Json
+  comment_tm      String?  @db.VarChar(255)
+  description_tm  String   @db.VarChar(255)
+  start_date_tm   String   @db.VarChar(255)
+  status_tm       String   @default("Pending") @db.VarChar(255)
+  end_date_tm     String   @db.VarChar(255)
+  delete_flag_tm  Boolean  @default(false)
+  createdAt       DateTime @db.DateTime(0)
+  updatedAt       DateTime @db.DateTime(0)
+}
+
+model technology_master_tm {
+  id_tm          Int      @id @default(autoincrement())
+  name_tm        String   @db.VarChar(255)
+  delete_flag_tm Boolean  @default(false)
+  createdAt      DateTime @db.DateTime(0)
+  updatedAt      DateTime @db.DateTime(0)
+}
+
+model transporter_email_te {
+  id               Int    @id @default(autoincrement())
+  host_te          String @db.VarChar(255)
+  port_te          Int
+  auth_user_te     String @db.VarChar(255)
+  auth_password_te String @db.VarChar(255)
+  user_id_te       String @db.VarChar(255)
+}
+
+model welcome_master_wm {
+  id_wm                Int     @id @default(autoincrement())
+  employee_id_wm       Int
+  personal_details_wm  Boolean @default(false)
+  education_details_wm Boolean @default(false)
+  details_details_wm   Boolean @default(false)
+}
+
+model question_bank_master_qbm {
+  sr_no_qbm    Int       @id
+  question_qbm String    @default("") @db.VarChar(500)
+  marks_qbm    Int
+  created_on   DateTime  @default(now()) @db.Timestamp(0)
+  created_by   Int
+  modified_on  DateTime? @db.Timestamp(0)
+  modified_by  Int?
+  is_deleted   Boolean   @default(false)
+}
