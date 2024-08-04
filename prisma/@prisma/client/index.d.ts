@@ -597,8 +597,8 @@ export namespace Prisma {
   export import Exact = $Public.Exact
 
   /**
-   * Prisma Client JS version: 5.14.0
-   * Query Engine version: e9771e62de70f79a5e1c604a2d7c8e2a0a874b48
+   * Prisma Client JS version: 5.15.0
+   * Query Engine version: 12e25d8d06f6ea5a0252864dd9a03b1bb51f3022
    */
   export type PrismaVersion = {
     client: string
@@ -3170,10 +3170,10 @@ export namespace Prisma {
     name?: boolean
   }, ExtArgs["result"]["sequelizeMeta"]>
 
+
   export type SequelizeMetaSelectScalar = {
     name?: boolean
   }
-
 
 
   export type $SequelizeMetaPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -3184,7 +3184,6 @@ export namespace Prisma {
     }, ExtArgs["result"]["sequelizeMeta"]>
     composites: {}
   }
-
 
   type SequelizeMetaGetPayload<S extends boolean | null | undefined | SequelizeMetaDefaultArgs> = $Result.GetResult<Prisma.$SequelizeMetaPayload, S>
 
@@ -4089,6 +4088,7 @@ export namespace Prisma {
     updatedAt?: boolean
   }, ExtArgs["result"]["attendance_master_am"]>
 
+
   export type attendance_master_amSelectScalar = {
     id_am?: boolean
     attendance_id?: boolean
@@ -4101,7 +4101,6 @@ export namespace Prisma {
     createdAt?: boolean
     updatedAt?: boolean
   }
-
 
 
   export type $attendance_master_amPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -4121,7 +4120,6 @@ export namespace Prisma {
     }, ExtArgs["result"]["attendance_master_am"]>
     composites: {}
   }
-
 
   type attendance_master_amGetPayload<S extends boolean | null | undefined | attendance_master_amDefaultArgs> = $Result.GetResult<Prisma.$attendance_master_amPayload, S>
 
@@ -4995,6 +4993,7 @@ export namespace Prisma {
     updatedAt?: boolean
   }, ExtArgs["result"]["document_master_rm"]>
 
+
   export type document_master_rmSelectScalar = {
     id_drm?: boolean
     name_drm?: boolean
@@ -5002,7 +5001,6 @@ export namespace Prisma {
     createdAt?: boolean
     updatedAt?: boolean
   }
-
 
 
   export type $document_master_rmPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -5017,7 +5015,6 @@ export namespace Prisma {
     }, ExtArgs["result"]["document_master_rm"]>
     composites: {}
   }
-
 
   type document_master_rmGetPayload<S extends boolean | null | undefined | document_master_rmDefaultArgs> = $Result.GetResult<Prisma.$document_master_rmPayload, S>
 
@@ -5894,6 +5891,7 @@ export namespace Prisma {
     updatedAt?: boolean
   }, ExtArgs["result"]["dropDown_master_dm"]>
 
+
   export type dropDown_master_dmSelectScalar = {
     id_dm?: boolean
     name_dm?: boolean
@@ -5902,7 +5900,6 @@ export namespace Prisma {
     createdAt?: boolean
     updatedAt?: boolean
   }
-
 
 
   export type $dropDown_master_dmPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -5918,7 +5915,6 @@ export namespace Prisma {
     }, ExtArgs["result"]["dropDown_master_dm"]>
     composites: {}
   }
-
 
   type dropDown_master_dmGetPayload<S extends boolean | null | undefined | dropDown_master_dmDefaultArgs> = $Result.GetResult<Prisma.$dropDown_master_dmPayload, S>
 
@@ -6804,6 +6800,7 @@ export namespace Prisma {
     updatedAt?: boolean
   }, ExtArgs["result"]["dwr_date_adjust_dda"]>
 
+
   export type dwr_date_adjust_ddaSelectScalar = {
     id_dda?: boolean
     employee_id_dda?: boolean
@@ -6813,7 +6810,6 @@ export namespace Prisma {
     createdAt?: boolean
     updatedAt?: boolean
   }
-
 
 
   export type $dwr_date_adjust_ddaPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -6830,7 +6826,6 @@ export namespace Prisma {
     }, ExtArgs["result"]["dwr_date_adjust_dda"]>
     composites: {}
   }
-
 
   type dwr_date_adjust_ddaGetPayload<S extends boolean | null | undefined | dwr_date_adjust_ddaDefaultArgs> = $Result.GetResult<Prisma.$dwr_date_adjust_ddaPayload, S>
 
@@ -7793,6 +7788,7 @@ export namespace Prisma {
     updatedAt?: boolean
   }, ExtArgs["result"]["dwr_ds"]>
 
+
   export type dwr_dsSelectScalar = {
     id_ds?: boolean
     employee_id_ds?: boolean
@@ -7811,7 +7807,6 @@ export namespace Prisma {
     createdAt?: boolean
     updatedAt?: boolean
   }
-
 
 
   export type $dwr_dsPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -7837,7 +7832,6 @@ export namespace Prisma {
     }, ExtArgs["result"]["dwr_ds"]>
     composites: {}
   }
-
 
   type dwr_dsGetPayload<S extends boolean | null | undefined | dwr_dsDefaultArgs> = $Result.GetResult<Prisma.$dwr_dsPayload, S>
 
@@ -8757,6 +8751,7 @@ export namespace Prisma {
     updatedAt?: boolean
   }, ExtArgs["result"]["email_log_el"]>
 
+
   export type email_log_elSelectScalar = {
     id?: boolean
     eamil_el?: boolean
@@ -8769,7 +8764,6 @@ export namespace Prisma {
     createdAt?: boolean
     updatedAt?: boolean
   }
-
 
 
   export type $email_log_elPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -8789,7 +8783,6 @@ export namespace Prisma {
     }, ExtArgs["result"]["email_log_el"]>
     composites: {}
   }
-
 
   type email_log_elGetPayload<S extends boolean | null | undefined | email_log_elDefaultArgs> = $Result.GetResult<Prisma.$email_log_elPayload, S>
 
@@ -9739,6 +9732,7 @@ export namespace Prisma {
     updatedAt?: boolean
   }, ExtArgs["result"]["employee_address_ea"]>
 
+
   export type employee_address_eaSelectScalar = {
     id_ea?: boolean
     employee_id_ea?: boolean
@@ -9755,7 +9749,6 @@ export namespace Prisma {
     createdAt?: boolean
     updatedAt?: boolean
   }
-
 
 
   export type $employee_address_eaPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -9779,7 +9772,6 @@ export namespace Prisma {
     }, ExtArgs["result"]["employee_address_ea"]>
     composites: {}
   }
-
 
   type employee_address_eaGetPayload<S extends boolean | null | undefined | employee_address_eaDefaultArgs> = $Result.GetResult<Prisma.$employee_address_eaPayload, S>
 
@@ -10681,6 +10673,7 @@ export namespace Prisma {
     updatedAt?: boolean
   }, ExtArgs["result"]["employee_document_ed"]>
 
+
   export type employee_document_edSelectScalar = {
     id_ed?: boolean
     employee_id_ed?: boolean
@@ -10691,7 +10684,6 @@ export namespace Prisma {
     createdAt?: boolean
     updatedAt?: boolean
   }
-
 
 
   export type $employee_document_edPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -10709,7 +10701,6 @@ export namespace Prisma {
     }, ExtArgs["result"]["employee_document_ed"]>
     composites: {}
   }
-
 
   type employee_document_edGetPayload<S extends boolean | null | undefined | employee_document_edDefaultArgs> = $Result.GetResult<Prisma.$employee_document_edPayload, S>
 
@@ -11625,6 +11616,7 @@ export namespace Prisma {
     document_eed?: boolean
   }, ExtArgs["result"]["employee_educational_details_eed"]>
 
+
   export type employee_educational_details_eedSelectScalar = {
     id_eed?: boolean
     employee_id_eed?: boolean
@@ -11638,7 +11630,6 @@ export namespace Prisma {
     updatedAt?: boolean
     document_eed?: boolean
   }
-
 
 
   export type $employee_educational_details_eedPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -11659,7 +11650,6 @@ export namespace Prisma {
     }, ExtArgs["result"]["employee_educational_details_eed"]>
     composites: {}
   }
-
 
   type employee_educational_details_eedGetPayload<S extends boolean | null | undefined | employee_educational_details_eedDefaultArgs> = $Result.GetResult<Prisma.$employee_educational_details_eedPayload, S>
 
@@ -12644,6 +12634,7 @@ export namespace Prisma {
     _count?: boolean | Employee_master_emCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["employee_master_em"]>
 
+
   export type employee_master_emSelectScalar = {
     id_em?: boolean
     firstname_em?: boolean
@@ -12666,12 +12657,10 @@ export namespace Prisma {
     updatedAt?: boolean
   }
 
-
   export type employee_master_emInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     leave_management_lm?: boolean | employee_master_em$leave_management_lmArgs<ExtArgs>
     _count?: boolean | Employee_master_emCountOutputTypeDefaultArgs<ExtArgs>
   }
-
 
   export type $employee_master_emPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "employee_master_em"
@@ -12701,7 +12690,6 @@ export namespace Prisma {
     }, ExtArgs["result"]["employee_master_em"]>
     composites: {}
   }
-
 
   type employee_master_emGetPayload<S extends boolean | null | undefined | employee_master_emDefaultArgs> = $Result.GetResult<Prisma.$employee_master_emPayload, S>
 
@@ -13773,6 +13761,7 @@ export namespace Prisma {
     addhar_no_name_epd?: boolean
   }, ExtArgs["result"]["employee_personal_details_epd"]>
 
+
   export type employee_personal_details_epdSelectScalar = {
     id_epd?: boolean
     employee_id_epd?: boolean
@@ -13796,7 +13785,6 @@ export namespace Prisma {
     pan_no_name_epd?: boolean
     addhar_no_name_epd?: boolean
   }
-
 
 
   export type $employee_personal_details_epdPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -13827,7 +13815,6 @@ export namespace Prisma {
     }, ExtArgs["result"]["employee_personal_details_epd"]>
     composites: {}
   }
-
 
   type employee_personal_details_epdGetPayload<S extends boolean | null | undefined | employee_personal_details_epdDefaultArgs> = $Result.GetResult<Prisma.$employee_personal_details_epdPayload, S>
 
@@ -14780,6 +14767,7 @@ export namespace Prisma {
     document_esd?: boolean
   }, ExtArgs["result"]["employee_salary_details_esd"]>
 
+
   export type employee_salary_details_esdSelectScalar = {
     id_esd?: boolean
     employee_id_esd?: boolean
@@ -14795,7 +14783,6 @@ export namespace Prisma {
     updatedAt?: boolean
     document_esd?: boolean
   }
-
 
 
   export type $employee_salary_details_esdPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -14818,7 +14805,6 @@ export namespace Prisma {
     }, ExtArgs["result"]["employee_salary_details_esd"]>
     composites: {}
   }
-
 
   type employee_salary_details_esdGetPayload<S extends boolean | null | undefined | employee_salary_details_esdDefaultArgs> = $Result.GetResult<Prisma.$employee_salary_details_esdPayload, S>
 
@@ -15711,6 +15697,7 @@ export namespace Prisma {
     updatedAt?: boolean
   }, ExtArgs["result"]["holiday_master_hm"]>
 
+
   export type holiday_master_hmSelectScalar = {
     id_hm?: boolean
     name_hm?: boolean
@@ -15720,7 +15707,6 @@ export namespace Prisma {
     createdAt?: boolean
     updatedAt?: boolean
   }
-
 
 
   export type $holiday_master_hmPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -15737,7 +15723,6 @@ export namespace Prisma {
     }, ExtArgs["result"]["holiday_master_hm"]>
     composites: {}
   }
-
 
   type holiday_master_hmGetPayload<S extends boolean | null | undefined | holiday_master_hmDefaultArgs> = $Result.GetResult<Prisma.$holiday_master_hmPayload, S>
 
@@ -16665,6 +16650,7 @@ export namespace Prisma {
     employee_master_em?: boolean | employee_master_emDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["leave_management_lm"]>
 
+
   export type leave_management_lmSelectScalar = {
     id_lm?: boolean
     employee_id_lm?: boolean
@@ -16680,11 +16666,9 @@ export namespace Prisma {
     updatedAt?: boolean
   }
 
-
   export type leave_management_lmInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     employee_master_em?: boolean | employee_master_emDefaultArgs<ExtArgs>
   }
-
 
   export type $leave_management_lmPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     name: "leave_management_lm"
@@ -16707,7 +16691,6 @@ export namespace Prisma {
     }, ExtArgs["result"]["leave_management_lm"]>
     composites: {}
   }
-
 
   type leave_management_lmGetPayload<S extends boolean | null | undefined | leave_management_lmDefaultArgs> = $Result.GetResult<Prisma.$leave_management_lmPayload, S>
 
@@ -17624,6 +17607,7 @@ export namespace Prisma {
     updatedAt?: boolean
   }, ExtArgs["result"]["leave_master_rm"]>
 
+
   export type leave_master_rmSelectScalar = {
     id_ltm?: boolean
     name_ltm?: boolean
@@ -17631,7 +17615,6 @@ export namespace Prisma {
     createdAt?: boolean
     updatedAt?: boolean
   }
-
 
 
   export type $leave_master_rmPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -17646,7 +17629,6 @@ export namespace Prisma {
     }, ExtArgs["result"]["leave_master_rm"]>
     composites: {}
   }
-
 
   type leave_master_rmGetPayload<S extends boolean | null | undefined | leave_master_rmDefaultArgs> = $Result.GetResult<Prisma.$leave_master_rmPayload, S>
 
@@ -18523,6 +18505,7 @@ export namespace Prisma {
     updatedAt?: boolean
   }, ExtArgs["result"]["letters_master_lm"]>
 
+
   export type letters_master_lmSelectScalar = {
     id_lm?: boolean
     letter_type_lm?: boolean
@@ -18531,7 +18514,6 @@ export namespace Prisma {
     createdAt?: boolean
     updatedAt?: boolean
   }
-
 
 
   export type $letters_master_lmPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -18547,7 +18529,6 @@ export namespace Prisma {
     }, ExtArgs["result"]["letters_master_lm"]>
     composites: {}
   }
-
 
   type letters_master_lmGetPayload<S extends boolean | null | undefined | letters_master_lmDefaultArgs> = $Result.GetResult<Prisma.$letters_master_lmPayload, S>
 
@@ -19425,6 +19406,7 @@ export namespace Prisma {
     updatedAt?: boolean
   }, ExtArgs["result"]["letters_type_master_ltm"]>
 
+
   export type letters_type_master_ltmSelectScalar = {
     id_ltm?: boolean
     letter_type_ltm?: boolean
@@ -19433,7 +19415,6 @@ export namespace Prisma {
     createdAt?: boolean
     updatedAt?: boolean
   }
-
 
 
   export type $letters_type_master_ltmPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -19449,7 +19430,6 @@ export namespace Prisma {
     }, ExtArgs["result"]["letters_type_master_ltm"]>
     composites: {}
   }
-
 
   type letters_type_master_ltmGetPayload<S extends boolean | null | undefined | letters_type_master_ltmDefaultArgs> = $Result.GetResult<Prisma.$letters_type_master_ltmPayload, S>
 
@@ -20351,6 +20331,7 @@ export namespace Prisma {
     updatedAt?: boolean
   }, ExtArgs["result"]["offer_letter_template_schema_olts"]>
 
+
   export type offer_letter_template_schema_oltsSelectScalar = {
     id_olts?: boolean
     paragraph1_olts?: boolean
@@ -20362,7 +20343,6 @@ export namespace Prisma {
     createdAt?: boolean
     updatedAt?: boolean
   }
-
 
 
   export type $offer_letter_template_schema_oltsPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -20381,7 +20361,6 @@ export namespace Prisma {
     }, ExtArgs["result"]["offer_letter_template_schema_olts"]>
     composites: {}
   }
-
 
   type offer_letter_template_schema_oltsGetPayload<S extends boolean | null | undefined | offer_letter_template_schema_oltsDefaultArgs> = $Result.GetResult<Prisma.$offer_letter_template_schema_oltsPayload, S>
 
@@ -21334,6 +21313,7 @@ export namespace Prisma {
     updatedAt?: boolean
   }, ExtArgs["result"]["project_master_pm"]>
 
+
   export type project_master_pmSelectScalar = {
     id_pm?: boolean
     name_pm?: boolean
@@ -21352,7 +21332,6 @@ export namespace Prisma {
     createdAt?: boolean
     updatedAt?: boolean
   }
-
 
 
   export type $project_master_pmPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -21378,7 +21357,6 @@ export namespace Prisma {
     }, ExtArgs["result"]["project_master_pm"]>
     composites: {}
   }
-
 
   type project_master_pmGetPayload<S extends boolean | null | undefined | project_master_pmDefaultArgs> = $Result.GetResult<Prisma.$project_master_pmPayload, S>
 
@@ -22258,6 +22236,7 @@ export namespace Prisma {
     updatedAt?: boolean
   }, ExtArgs["result"]["role_master_rm"]>
 
+
   export type role_master_rmSelectScalar = {
     id_rm?: boolean
     name_rm?: boolean
@@ -22265,7 +22244,6 @@ export namespace Prisma {
     createdAt?: boolean
     updatedAt?: boolean
   }
-
 
 
   export type $role_master_rmPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -22280,7 +22258,6 @@ export namespace Prisma {
     }, ExtArgs["result"]["role_master_rm"]>
     composites: {}
   }
-
 
   type role_master_rmGetPayload<S extends boolean | null | undefined | role_master_rmDefaultArgs> = $Result.GetResult<Prisma.$role_master_rmPayload, S>
 
@@ -23309,6 +23286,7 @@ export namespace Prisma {
     updatedAt?: boolean
   }, ExtArgs["result"]["salary_slip_master_ssm"]>
 
+
   export type salary_slip_master_ssmSelectScalar = {
     id_ssm?: boolean
     employee_id_ssm?: boolean
@@ -23330,7 +23308,6 @@ export namespace Prisma {
     createdAt?: boolean
     updatedAt?: boolean
   }
-
 
 
   export type $salary_slip_master_ssmPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -23359,7 +23336,6 @@ export namespace Prisma {
     }, ExtArgs["result"]["salary_slip_master_ssm"]>
     composites: {}
   }
-
 
   type salary_slip_master_ssmGetPayload<S extends boolean | null | undefined | salary_slip_master_ssmDefaultArgs> = $Result.GetResult<Prisma.$salary_slip_master_ssmPayload, S>
 
@@ -24302,6 +24278,7 @@ export namespace Prisma {
     updatedAt?: boolean
   }, ExtArgs["result"]["task_master_tm"]>
 
+
   export type task_master_tmSelectScalar = {
     id_tm?: boolean
     project_id_tm?: boolean
@@ -24318,7 +24295,6 @@ export namespace Prisma {
     createdAt?: boolean
     updatedAt?: boolean
   }
-
 
 
   export type $task_master_tmPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -24342,7 +24318,6 @@ export namespace Prisma {
     }, ExtArgs["result"]["task_master_tm"]>
     composites: {}
   }
-
 
   type task_master_tmGetPayload<S extends boolean | null | undefined | task_master_tmDefaultArgs> = $Result.GetResult<Prisma.$task_master_tmPayload, S>
 
@@ -25220,6 +25195,7 @@ export namespace Prisma {
     updatedAt?: boolean
   }, ExtArgs["result"]["technology_master_tm"]>
 
+
   export type technology_master_tmSelectScalar = {
     id_tm?: boolean
     name_tm?: boolean
@@ -25227,7 +25203,6 @@ export namespace Prisma {
     createdAt?: boolean
     updatedAt?: boolean
   }
-
 
 
   export type $technology_master_tmPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -25242,7 +25217,6 @@ export namespace Prisma {
     }, ExtArgs["result"]["technology_master_tm"]>
     composites: {}
   }
-
 
   type technology_master_tmGetPayload<S extends boolean | null | undefined | technology_master_tmDefaultArgs> = $Result.GetResult<Prisma.$technology_master_tmPayload, S>
 
@@ -26123,6 +26097,7 @@ export namespace Prisma {
     user_id_te?: boolean
   }, ExtArgs["result"]["transporter_email_te"]>
 
+
   export type transporter_email_teSelectScalar = {
     id?: boolean
     host_te?: boolean
@@ -26131,7 +26106,6 @@ export namespace Prisma {
     auth_password_te?: boolean
     user_id_te?: boolean
   }
-
 
 
   export type $transporter_email_tePayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -26147,7 +26121,6 @@ export namespace Prisma {
     }, ExtArgs["result"]["transporter_email_te"]>
     composites: {}
   }
-
 
   type transporter_email_teGetPayload<S extends boolean | null | undefined | transporter_email_teDefaultArgs> = $Result.GetResult<Prisma.$transporter_email_tePayload, S>
 
@@ -27021,6 +26994,7 @@ export namespace Prisma {
     details_details_wm?: boolean
   }, ExtArgs["result"]["welcome_master_wm"]>
 
+
   export type welcome_master_wmSelectScalar = {
     id_wm?: boolean
     employee_id_wm?: boolean
@@ -27028,7 +27002,6 @@ export namespace Prisma {
     education_details_wm?: boolean
     details_details_wm?: boolean
   }
-
 
 
   export type $welcome_master_wmPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -27043,7 +27016,6 @@ export namespace Prisma {
     }, ExtArgs["result"]["welcome_master_wm"]>
     composites: {}
   }
-
 
   type welcome_master_wmGetPayload<S extends boolean | null | undefined | welcome_master_wmDefaultArgs> = $Result.GetResult<Prisma.$welcome_master_wmPayload, S>
 
@@ -27948,6 +27920,7 @@ export namespace Prisma {
     is_deleted?: boolean
   }, ExtArgs["result"]["question_bank_master_qbm"]>
 
+
   export type question_bank_master_qbmSelectScalar = {
     sr_no_qbm?: boolean
     question_qbm?: boolean
@@ -27958,7 +27931,6 @@ export namespace Prisma {
     modified_by?: boolean
     is_deleted?: boolean
   }
-
 
 
   export type $question_bank_master_qbmPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -27976,7 +27948,6 @@ export namespace Prisma {
     }, ExtArgs["result"]["question_bank_master_qbm"]>
     composites: {}
   }
-
 
   type question_bank_master_qbmGetPayload<S extends boolean | null | undefined | question_bank_master_qbmDefaultArgs> = $Result.GetResult<Prisma.$question_bank_master_qbmPayload, S>
 

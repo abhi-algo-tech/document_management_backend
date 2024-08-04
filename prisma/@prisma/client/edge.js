@@ -31,12 +31,12 @@ exports.Prisma = Prisma
 exports.$Enums = {}
 
 /**
- * Prisma Client JS version: 5.14.0
- * Query Engine version: e9771e62de70f79a5e1c604a2d7c8e2a0a874b48
+ * Prisma Client JS version: 5.15.0
+ * Query Engine version: 12e25d8d06f6ea5a0252864dd9a03b1bb51f3022
  */
 Prisma.prismaVersion = {
-  client: "5.14.0",
-  engine: "e9771e62de70f79a5e1c604a2d7c8e2a0a874b48"
+  client: "5.15.0",
+  engine: "12e25d8d06f6ea5a0252864dd9a03b1bb51f3022"
 }
 
 Prisma.PrismaClientKnownRequestError = PrismaClientKnownRequestError;
@@ -498,7 +498,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "D:\\nest\\nest_mysql\\nest-prisma-mysql\\prisma\\@prisma\\client",
+      "value": "D:\\Abhishek\\document_mangement\\document-management-backend\\prisma\\@prisma\\client",
       "fromEnvVar": null
     },
     "config": {
@@ -519,8 +519,8 @@ const config = {
     "schemaEnvPath": "../../../.env"
   },
   "relativePath": "../..",
-  "clientVersion": "5.14.0",
-  "engineVersion": "e9771e62de70f79a5e1c604a2d7c8e2a0a874b48",
+  "clientVersion": "5.15.0",
+  "engineVersion": "12e25d8d06f6ea5a0252864dd9a03b1bb51f3022",
   "datasourceNames": [
     "db"
   ],
